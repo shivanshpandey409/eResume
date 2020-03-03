@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>e-Resume</title>
+
+	<link rel="icon" href="Images/icon.png" type="image/x-icon">
+
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">	
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+	<script src="https://kit.fontawesome.com/e0cbc93328.js" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Fredericka+the+Great|Great+Vibes|Indie+Flower|Lato|Merienda+One|Noto+Sans|Pacifico|Roboto|Sirin+Stencil&display=swap" rel="stylesheet">
+
+    <script src="javascript/navbar.js"></script>
+</head>
+<body>
+	<nav>
+		<label id="logo">Resume</label>
+		<ul id="navbar">
+			<li id="ac"><a href="#About" id="active">About</a></li>
+			<li><a href="#Education">Education</a></li>
+			<li><a href="#Project">Projects</a></li>
+			<li><a href="#Achievements">Achievements</a></li>
+			<li><a href="#Skills">Skills</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+		<label id="icon">
+			<i class="fas fa-bars" onclick="fun()"></i>
+		</label>
+		<input type="text" id="text" value="0">
+	</nav>
+
+	<progress value="0" max="1">
+            <!-- Older browsers look to the old div style of progress bars -->
+            <!-- Newer browsers ignore this stuff but it allows older browsers to 
+                    still have a progress bar. -->
+            <div class="progress-container">
+                <span class="progress-bar"></span>    
+            </div>
+        </progress>
+
+	<div class="About" id="About">
+		<div class="container-fluid section-1">
+			<div class="row row-1">
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-1">
+					<blockquote class="blockquote">
+					    <p>
+					    Waiting for an opportunity to put my skills and strengths together for the betterment of society. Would love to work with an organization to explore new things.
+						</p>
+					    <footer class="blockquote-footer">
+					    Shivansh Pandey<br> &nbsp &nbsp B.Tech. CSE<br> &nbsp &nbsp II Year
+						</footer>
+					</blockquote>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-2">
+					<img src="Images/profile.jpg" class="img-responsive rounded image_col-2">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="Education" id="Education">
+		<div class="container-fluid col-sm-12 section-2">
+			<ul class="timeline">
+				<li>
+					<div class="direction-r">
+						<div class="flag-wrapper">
+							<span class="flag">UnderGraduation</span>
+						</div>
+						<div class="desc"> Maulana Azad National Institute of Technology </div>
+						<div class="desc"> 2018-22 </div>
+						<div class="desc"> Aggregating <b>9.2</b> grade points </div>
+					</div>
+				</li>
+				<li>
+					<div class="direction-l">
+						<div class="flag-wrapper">
+							<span class="flag">Grade XII</span>
+						</div>
+						<div class="desc"> St. Mary's Convent School, Sagar </div>
+						<div class="desc"> 2018 </div>
+						<div class="desc"> Divisional Topper with <b>97.4</b>% </div>
+						<div class="desc"> Merit Certificate from CBSE board in IP </div>
+					</div>
+				</li>
+				<li>
+					<div class="direction-r">
+						<div class="flag-wrapper">
+							<span class="flag">Grade X</span>
+						</div>
+						<div class="desc"> St. Mary's Convent School, Sagar </div>
+						<div class="desc"> 2016 </div>
+						<div class="desc"> School Topper with <b>10</b> CGPA </div>
+					</div>
+				</li>
+				<li>
+					<div class="direction-l">
+						<div class="flag-wrapper">
+							<span class="flag">Elementary Education</span>
+						</div>
+						<div class="desc">St. Joseph Convent School, Banda</div>
+						<div class="desc"> 2005-14 </div>
+					</div>
+				</li>  
+			</ul>
+		</div>
+	</div>
+
+	<div class="Project" id="Project">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col1">
+					<span class="heading"> Projects </span>
+				</div>
+				<div class="col-lg-6 col2">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Project 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Project 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Project 3</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Project 4</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tabs-1" role="tabpanel">
+							<div class=card>
+							    <img class=cardimg src="Images/timer.jpg" width="100%" height="50%">
+							    <div class=cardcontent>
+							      <h3>Countdown Timer</h3>
+							      <p>Android Studio Project<br> Language used: Java</p>
+							    </div>
+							    <div class=cardfooter>
+							      <h3>View Project</h3>
+							      <a href="#"><i class="fab fa-github cardreadme" style="font-size:24px"></i></a>
+							    </div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tabs-2" role="tabpanel">
+							<div class=card>
+							    <img class=cardimg src="Images/pedometer.png" width="100%" height="50%">
+							    <div class=cardcontent>
+							      <h3>Step Count</h3>
+							      <p>Android Studio Project<br> Language used: Java</p>
+							    </div>
+							    <div class=cardfooter>
+							      <h3>View Project</h3>
+							      <a href="#"><i class="fab fa-github cardreadme" style="font-size:24px"></i></a>
+							    </div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tabs-3" role="tabpanel">
+							<div class=card>
+							    <img class=cardimg src="Images/tictactoe.jpg" width="100%" height="50%">
+							    <div class=cardcontent>
+							      <h3>Tic Tac Toe</h3>
+							      <p>Android Studio Project<br> Language used: Java</p>
+							    </div>
+							    <div class=cardfooter>
+							      <h3>View Project</h3>
+							      <a href="#"><i class="fab fa-github cardreadme" style="font-size:24px"></i></a>
+							    </div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tabs-4" role="tabpanel">
+							<div class=card>
+							    <img class=cardimg src="Images/todo.jpg" width="100%" height="50%">
+							    <div class=cardcontent>
+							      <h3>Attendance Manager</h3>
+							      <p>Netbeans Project<br> Language used: Java<br> Database: MySQL</p>
+							    </div>
+							    <div class=cardfooter>
+							      <h3>View Project</h3>
+							      <a href="#"><i class="fab fa-github cardreadme" style="font-size:24px"></i></a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="Achievements" id="Achievements">
+		<img src="Images/achievement.jpg" class="bg">
+		<div class="overlay">
+			<div class="board_head">
+				Achievements
+			</div>
+			<div class="board">
+				<div class="circle part1">
+					<p> Global Rank 274<br> on Hackerearth </p>
+				</div>
+				<div class="circle part2">
+					<p> 4-Star Badge<br> in Problem Solving<br> on Hackerearth </p>
+				</div>
+				<div class="circle part3">
+					<p> Codechef rating<br> 1667 </p>
+				</div>
+				<div class="circle part4">
+					<p> Divisional Topper<br> with 97.4%<br> in class XII </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="Skills" id="Skills">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 col-xl-6 col-md-12 Col1">
+					<center>
+					<div id="SkillBox">
+					<div class="SkillBar">
+					    <div id="Skill-HTML"> 
+						    <span class="Skill-Area ">C</span>
+						    <span class="PercentText ">65%</span>
+					    </div>
+					</div>
+  
+				    <div class="SkillBar">
+					    <div id="Skill-CSS">
+					      <span class="Skill-Area ">C++</span>
+					      <span class="PercentText ">75%</span>
+					    </div>
+				    </div>
+
+  					<div class="SkillBar">
+					    <div id="Skill-jQuery">
+					      <span class="Skill-Area ">Java</span>
+					      <span class="PercentText ">40%</span>
+					    </div>
+ 				    </div>
+  
+				    <div class="SkillBar">
+					    <div id="Skill-JS">
+					      <span class="Skill-Area ">Python</span>
+					      <span class="PercentText ">25%</span>
+					    </div>
+				    </div>
+  
+				    <div class="SkillBar">
+					    <div id="Skill-XML">
+					      <span class="Skill-Area ">HTML5 </span>
+					      <span class="PercentText ">85%</span>
+					    </div>
+				  	</div>
+  
+    				<div class="SkillBar">
+					    <div id="Skill-C">
+					      <span class="Skill-Area ">CSS3</span>
+					      <span class="PercentText ">70%</span>
+					    </div>
+  					</div>
+  
+				    <div class="SkillBar">
+					    <div id="Skill-JAVA">
+					      <span class="Skill-Area ">Javascript </span>
+					      <span class="PercentText ">45%</span>
+					    </div>
+  					</div>
+  
+    				<div class="SkillBar">
+					    <div id="Skill-PHP">
+					      <span class="Skill-Area ">PHP </span>
+					      <span class="PercentText ">40%</span>
+					    </div>
+  					</div>
+  
+    				<div class="SkillBar">
+					    <div id="Skill-SQL">
+					      <span class="Skill-Area ">MySQL </span>
+					      <span class="PercentText ">80%</span>
+					    </div>
+  					</div>
+  
+    				<div class="SkillBar">
+					    <div id="Skill-VBNET">
+					      <span class="Skill-Area ">React</span>
+					      <span class="PercentText ">0%</span>
+					    </div>
+  					</div>  
+					</div>
+					</center>
+				</div>
+				<div class="col-lg-6 col-sm-12 col-xl-6 col-md-12 Col2">
+					Skills
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="Contact" id="Contact">
+		<div class="Section">
+			<div class="row footer-row1">
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fas fa-phone icon phone"></i></a>
+					<span class="iconHead">8827867773</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fas fa-map-marker icon location"></i></a>
+					<span class="iconHead">MANIT</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fas fa-envelope icon mail"></i></a>
+					<span class="iconHead">Gmail</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fab fa-hackerrank icon hackerrank"></i></a>
+					<span class="iconHead">Hackerrank</span>
+				</div>
+			</div>
+			<div class="row footer-row2">
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fab fa-linkedin icon linkedin"></i></a>
+					<span class="iconHead">Linkedin</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fab fa-github icon github"></i></a>
+					<span class="iconHead">Github</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fab fa-instagram icon instagram"></i></a>
+					<span class="iconHead">Instagram</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fab fa-facebook icon facebook"></i></a>
+					<span class="iconHead">Facebook</span>
+				</div>
+			</div>
+			<div class="row footer-row3">
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fas fa-code icon codechef"></i></a>
+					<span class="iconHead">CodeChef</span>
+				</div>
+				<div class="col-sm-12 col-lg-3 col-xl-3">
+					<a href="#"><i class="fas fa-code icon hackerearth"></i></a>
+					<span class="iconHead">Hackerearth</span>
+				</div>
+			</div>
+			<div class="row footer-row4">
+				<i class="fas fa-copyright">Shivansh Pandey</i>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
